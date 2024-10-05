@@ -1,3 +1,9 @@
 # 60006CEM-MLTasks
 Repository for 6006CEM Machine Learning Tasks
 
+## Task 1
+Diamond Price Prediction [Task 1](Task1-Regression/MLTask1Regression.ipynb) 
+
+
+## Task 2
+
