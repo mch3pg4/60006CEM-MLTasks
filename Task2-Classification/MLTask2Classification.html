@@ -106,7 +106,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div id="cell-4" class="cell">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd                                                             <span class="co"># for data analysis, cleaning and exploration</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt                                                 <span class="co"># for data visualization </span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> seaborn <span class="im">as</span> sns                                                           <span class="co"># for statiscal visualization</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> seaborn <span class="im">as</span> sns                                                           <span class="co"># for statistical visualization</span></span>
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.preprocessing <span class="im">import</span> RobustScaler                                  <span class="co"># for scaling the data</span></span>
 <span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> imblearn.over_sampling <span class="im">import</span> SMOTE                                        <span class="co"># for balacing imbalanced classes</span></span>
 <span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.model_selection <span class="im">import</span> train_test_split, GridSearchCV              <span class="co"># for splitting the data and hyperparameter tuning</span></span>
@@ -875,7 +875,7 @@ memory usage: 400.3+ KB</code></pre>
 </div>
 </div>
 </div>
-<div id="cell-17" class="cell" data-execution_count="135">
+<div id="cell-17" class="cell">
 <div class="sourceCode cell-code" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="co"># show relationship between annual income and loan amount</span></span>
 <span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">10</span>, <span class="dv">6</span>))</span>
 <span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>sns.scatterplot(x<span class="op">=</span><span class="st">' income_annum'</span>, y<span class="op">=</span><span class="st">' loan_amount'</span>, data<span class="op">=</span>data, hue<span class="op">=</span><span class="st">' loan_status'</span>, style<span class="op">=</span><span class="st">' loan_status'</span>, markers<span class="op">=</span>{<span class="dv">0</span>: <span class="st">'X'</span>, <span class="dv">1</span>: <span class="st">'o'</span>})</span>
@@ -888,8 +888,7 @@ memory usage: 400.3+ KB</code></pre>
 <span id="cb15-10"><a href="#cb15-10" aria-hidden="true" tabindex="-1"></a>sns.relplot(x<span class="op">=</span><span class="st">' income_annum'</span>, y<span class="op">=</span><span class="st">' loan_amount'</span>, data<span class="op">=</span>data, hue<span class="op">=</span><span class="st">' loan_status'</span>, col<span class="op">=</span><span class="st">' loan_status'</span>, kind<span class="op">=</span><span class="st">'scatter'</span>)</span>
 <span id="cb15-11"><a href="#cb15-11" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">'Annual Income'</span>)</span>
 <span id="cb15-12"><a href="#cb15-12" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">'Loan Amount'</span>)</span>
-<span id="cb15-13"><a href="#cb15-13" aria-hidden="true" tabindex="-1"></a>plt.show()</span>
-<span id="cb15-14"><a href="#cb15-14" aria-hidden="true" tabindex="-1"></a></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb15-13"><a href="#cb15-13" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
