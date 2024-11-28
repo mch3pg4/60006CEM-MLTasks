@@ -1,4 +1,4 @@
-# 60006CEM-MLTasks
+# 6006CEM-MLTasks
 Repository for 6006CEM Machine Learning Tasks
 
 ## Task 1
